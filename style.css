@@ -1483,12 +1483,13 @@ justify-content:center;
     background:linear-gradient(135deg,#060b18,#0d1f3d,#081321);
     border-top:1px solid rgba(255,255,255,.08);
     margin-top:120px;
+    
+    floting botton 
 }
-/* Floating App Download Button */
 .floating-app-download {
     position: fixed;
     right: 25px;
-    bottom: 25px;
+    bottom: 95px; /* puts it above WhatsApp */
     z-index: 9999;
 
     display: flex;
@@ -1506,12 +1507,11 @@ justify-content:center;
     font-weight: 600;
 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-
     transition: all 0.3s ease;
 }
 
 .floating-app-download:hover {
-    transform: translateY(-5px) scale(1.03);
+    transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
 }
 
@@ -1519,11 +1519,10 @@ justify-content:center;
     font-size: 20px;
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .floating-app-download {
         right: 15px;
-        bottom: 15px;
+        bottom: 85px;
         padding: 12px 16px;
         font-size: 14px;
     }
