@@ -806,6 +806,199 @@ BUTTON
     box-shadow:0 0 35px rgba(0,191,255,.8);
 }
 
+
+
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Prevent accidental horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make sections adapt */
+.container,
+section,
+.hero,
+.about,
+.skills,
+.contact {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 60px 30px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 6vw, 55px);
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .about,
+    .skills,
+    .contact {
+        padding: 50px 30px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+
+    /* Navigation */
+    nav {
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 10vw, 44px);
+        line-height: 1.15;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Buttons */
+    .hero button,
+    .hero a,
+    .btn {
+        max-width: 100%;
+        min-height: 44px;
+    }
+
+    /* Sections */
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Cards */
+    .cards,
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Images */
+    .hero img,
+    .profile-img {
+        width: min(80vw, 320px);
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Large headings */
+    h1 {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    h2 {
+        font-size: clamp(25px, 7vw, 34px);
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    /* Text */
+    p {
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+
+    /* Footer */
+    footer {
+        padding: 35px 20px;
+        text-align: center;
+    }
+}
+
+
+/* ================================
+   VERY SMALL PHONES
+================================ */
+
+@media (max-width: 360px) {
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
 /*=========================
 RESPONSIVE
 ==========================*/
